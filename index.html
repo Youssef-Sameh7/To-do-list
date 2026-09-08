@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Task Manager</title>
+
+<link rel="stylesheet" href="./css/index.css">
+
+</head><body><div class="app">
+
+    <!-- ================= Header ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>Task<span>Flow</span></h1>
+            <p>Organize your day, achieve your goals.</p>
+        </div>
+
+    </header>
+
+
+    <!-- ================= Main ================= -->
+
+    <main class="main">
+
+        <!-- Add Task Section -->
+
+        <section class="task-form-section">
+
+            <h2>Add a New Task</h2>
+
+            <p class="section-description">
+                Create a task and set a deadline to stay organized.
+            </p>
+
+            <form id="taskForm">
+
+                <div class="form-group">
+
+                    <label for="taskInput">
+                        Task
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter your task..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="taskDate">
+                        Due Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="taskDate"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="add-btn"
+                >
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= Tasks Section ================= -->
+
+        <section class="tasks-section">
+
+            <div class="tasks-header">
+
+                <div>
+                    <h2>Your Tasks</h2>
+
+                    <p id="taskCounter">
+                        0 Tasks
+                    </p>
+                </div>
+
+
+                <select id="filterTasks">
+
+                    <option value="all">
+                        All Tasks
+                    </option>
+
+                    <option value="pending">
+                        Pending
+                    </option>
+
+                    <option value="completed">
+                        Completed
+                    </option>
+
+                    <option value="overdue">
+                        Overdue
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Tasks Container -->
+
+            <div
+                id="tasksContainer"
+                class="tasks-container"
+            >
+            </div>
+
+
+            <!-- Empty State -->
+
+            <div
+                id="emptyState"
+                class="empty-state"
+            >
+
+                <div class="empty-icon">
+                    ✓
+                </div>
+
+                <h3>No tasks yet</h3>
+
+                <p>
+                    Add your first task and start organizing your day.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= Footer ================= -->
+
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 TaskFlow. All rights reserved.
+        </p>
+
+    </footer>
+
+</div>
+
+
+<script src="./js/index.js"></script>
+
+</body></html>
